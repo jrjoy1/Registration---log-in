@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #24323d;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #24323d;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    color: #1ab188;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.message,
+.sign-in {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sign-in {
+    color: #1ab188;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sign-in a{
+    color: red;
+}
+
+.sign-in a:hover {
+color: #1EC79A;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.form label input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #24323d;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label input:focus + span,
+.form label input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label input:valid + span {
+    color: #1ab188;
+}
+
+.form label .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #24323d;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.register {
+    border: none;
+    outline: none;
+    background: #1ab188;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.register:hover {
+    background: #1EC79A;
+    transition: 0.3s;
+}

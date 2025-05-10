@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_log_in.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <p>Enter your credentials to log in.</p>
+
+    <!-- Flash message display -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('login') }}" method="POST">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit" class="login-btn">Log In</button>
+    </form>
+
+    <div class="register-link">
+      Don’t have an account? <a href="{{ url_for('register') }}">Register Now</a>
+    </div>
+  </div>
+</body>
+</html>

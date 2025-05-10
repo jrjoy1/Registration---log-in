@@ -1,0 +1,57 @@
+
+body {
+    background-color: #24323d;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.form-container {
+    padding: 30px;
+    width: 330px;
+    margin: auto;
+}
+
+h2 {
+    color: #1EC79A;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+}
+
+.login-btn {
+    width: 95%;
+    padding: 10px;
+    background-color: #1EC79A;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #1EC79A;
+}
+
+.register-link {
+    margin-top: 10px;
+    color: #1EC79A;
+}
+
+.register-link a {
+    color: red;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #1EC79A;
+}
